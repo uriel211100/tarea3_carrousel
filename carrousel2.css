@@ -1,0 +1,94 @@
+#carousel {
+    position: relative;
+  }
+  /* contenido carrrousel */
+  #slide-container {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px;
+    color: #000;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  .slide {
+    padding: 20px;
+    scroll-snap-align: left;
+    min-width: 33%;
+    text-align: left;
+    background-color: #ececec;
+  }
+  .back {
+    /* position: absolute; */
+    /* top: 45%;
+    left: 10px; */
+  }
+  .forward {
+    /* position: absolute; */
+    /* top: 45%;
+    right: 10px; */
+  }
+  /* contenedor indicadores */
+  .slide-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .slide-indicator {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px;
+    width: 50px;
+  }
+  .slide-indicator:after {
+    content: "";
+    background-color: #ccc;
+    height: 10px;
+    width: 50px;
+  }
+  .slide-indicator.active:after,
+  .slide-indicator:hover:after {
+    background-color: #cc9900;
+  }
+  /* flechas */
+  .arrow {
+    background-color: #cc9900;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.5s;
+  }
+
+
+
+
+
+
+
+
+
+
+  .icono-flecha{
+    font-size: 20px;
+  }
+  
+  .slide figure{
+    max-width: 250px;
+    border: 2px green solid;
+    margin: auto;
+  }
+  
+  .slide figure img{
+    width: 100%;
+    object-fit: cover;
+  }
